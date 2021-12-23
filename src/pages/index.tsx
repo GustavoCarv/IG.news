@@ -33,8 +33,8 @@ export default function Home({ product }: HomeProps) {
               {new Intl.NumberFormat("en-US", {
                 style: "currency",
                 currency: "USD",
-              }).format(product.amount)}
-              month
+              }).format(product.amount)} 
+              {' '}month
             </span>
           </p>
           <SubscribeButton priceId={product.priceId} />
